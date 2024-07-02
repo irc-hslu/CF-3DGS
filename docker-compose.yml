@@ -4,9 +4,10 @@ services:
     build: .
     image: cf-3dgs
     volumes:
-      - ./data:/app/data
-      - ./output:/app/output
-      - ./cache:/root/.cache
+      #- ./data:/app/data
+      #- ./output:/app/output
+      - $HOME/.cache:/root/.cache
+      - ./:/app
     command: bash
     ipc: host
     ulimits:
