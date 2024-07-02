@@ -2,7 +2,7 @@ tqdm==4.65.0
 Pillow
 opencv-contrib-python-headless==4.8.0.74
 imageio
-matplotlib
+matplotlib<3.5
 pyyaml
 plyfile
 kornia

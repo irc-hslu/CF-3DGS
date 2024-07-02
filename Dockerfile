@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/pytorch:22.12-py3
+FROM nvcr.io/nvidia/pytorch:23.12-py3
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     wget \
