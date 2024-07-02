@@ -10,3 +10,6 @@
 [submodule "submodules/Depth-Anything"]
 	path = submodules/Depth-Anything
 	url = https://github.com/thegenerativegeneration/Depth-Anything.git
+[submodule "submodules/Depth-Anything-V2"]
+	path = submodules/Depth-Anything-V2
+	url = https://github.com/thegenerativegeneration/Depth-Anything-V2.git
