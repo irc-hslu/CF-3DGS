@@ -7,3 +7,6 @@
 [submodule "submodules/SIBR_viewers"]
 	path = submodules/SIBR_viewers
 	url = https://gitlab.inria.fr/sibr/sibr_core
+[submodule "submodules/Depth-Anything"]
+	path = submodules/Depth-Anything
+	url = https://github.com/thegenerativegeneration/Depth-Anything.git

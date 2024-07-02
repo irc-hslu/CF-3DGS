@@ -94,3 +94,14 @@ python run_cf3dgs.py -s ./data/$CUSTOM_DATA/ \ # change to your data path
                      --data_type custom
 ```
 
+You can change the depth estimator:
+
+```bash
+python run_cf3dgs.py -s ./data/$CUSTOM_DATA/ 
+                     --mode train \
+                     --data_type custom \
+                     --depth_model_type depth_anything # can be one of [zoe, depth_anything, <anything>]. Anything but the first two will use MiDaS.
+```
+
+
+

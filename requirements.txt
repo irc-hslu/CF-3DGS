@@ -12,5 +12,6 @@ einops
 evo
 submodules/diff-gaussian-rasterization
 submodules/simple-knn
+submodules/Depth-Anything
 git+https://github.com/facebookresearch/pytorch3d.git@stable
 git+https://github.com/princeton-vl/lietorch.git

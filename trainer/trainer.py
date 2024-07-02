@@ -123,10 +123,11 @@ class GaussianTrainer(object):
             self.depth_model = zoe
         elif self.depth_model_type == "depth_anything":
             from torchvision.transforms import Compose
-            from submodules.DepthAnything.depth_anything.dpt import DepthAnything
-            from submodules.DepthAnything.depth_anything.util.transform import Resize, NormalizeImage, PrepareForNet
+            from depth_anything.dpt import DepthAnything
+            from depth_anything.util.transform import Resize, NormalizeImage, PrepareForNet
             encoder = 'vits' # can also be 'vitb' or 'vitl'
-            depth_anything = DepthAnything.from_pretrained('LiheYoung/depth_anything_{:}14'.format(encoder)).eval()
+            depth_anything = DepthAnything.from_pretrained('LiheYoung/depth_anything_{:}14'.format(encoder)
+                                                           ).eval()
             # depth_anything = DepthAnything.from_pretrained('checkpoints/depth_anything_metric_depth_outdoor', local_files_only=True).eval()
 
             self.depth_transforms = Compose([
